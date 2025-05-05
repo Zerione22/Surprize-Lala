@@ -159,14 +159,14 @@
   <div class="name-screen" id="nameScreen">
     <h2>Masukin nama kamu dulu ya 💕</h2>
     <input type="text" id="nameInput" placeholder="Tulis nama lengkapmu...">
-    <button onclick="checkName()">udah? pencet sinii 😆</button>
+    <button onclick="checkName()">Lanjut</button>
     <p id="error" style="color:red; margin-top: 1rem;"></p>
   </div>
 
   <div class="intro-screen" id="intro" style="display: none;">
     <h1>heyloooo pacalkuuuu 😆😆😆 </h1>
-    <p>ada sesuatu nih buat kamuuu,, ada tombol kan dibawah?</p>
-    <button onclick="startSurprise()">Klik disini sayaang 💖</button>
+    <p>Aku punya sesuatu yang spesial buat kamu...</p>
+    <button onclick="startSurprise()">Klik sini sayaang 💖</button>
   </div>
 
   <audio id="bg-music" loop>
@@ -175,20 +175,20 @@
   </audio>
 
   <div class="container" id="main-content">
-    <h1>For my fiancée Nabila Zikrina 💕💕💕 </h1>
-    <div class="date">29 Juni 2025- A Special Day Just For you</div>
+    <h1>For Nabila Zikrina</h1>
+    <div class="date">29 Juni - A Special Day Just For Us</div>
     <div class="message">
-      <p>heyloo sayanggkuu 😘💕</p>
-      <p>Banyak hal yang ingin aku sampein ke kamu, tapi aku susah ngungkapinnyaa 😆,Jadi aku bikin ini buat kamu. 💌</p>
-      <p>maaf yaa sayangg, ga terlalu bagus codingnya,, dah lupaa karena lama ga kepakee nii ilmuu 😭🥲, karena aku maww ini jadi spesial dan penuh cinta,, mwehehehe 💖</p>
+      <p>Hai ayang Nabila 😘</p>
+      <p>Ada banyak hal yang pengen aku bilang... Tapi kadang kata-kata susah keluar. Jadi aku bikin ini buat kamu. 💌</p>
+      <p>Isi pesannya nanti kamu temuin sendiri ya, karena aku pengen semua ini jadi spesial dan penuh cinta... 💖</p>
     </div>
     <div class="gallery">
-      <img src="https://github.com/Zerione22/Surprize-Lala/blob/main/IMG_0963.jpg">
-      <img src="https://drive.google.com/uc?export=view&id=1DUI-30RnOR_fwnO6Brp2ATffd6EC4fI3" alt="Foto 2">
+      <img src="raw.githubusercontent.com/Zerione22/Surprize-Lala/main/IMG_2958.JPG" alt="Foto 1">
+      <img src="raw.githubusercontent.com/Zerione22/Surprize-Lala/main/IMG_1191.JPG" alt="Foto 2">
     </div>
     <div class="more-question" id="more-q">
-      <p>Mau lagi nggak aiyaankk? 😆😚</p>
-      <button onclick="handleChoice(false)">Gamau😋</button>
+      <p>Mau lagi nggak? 😚</p>
+      <button onclick="handleChoice(false)">Gamau</button>
       <button onclick="handleChoice(true)">Mauu sayang 💕</button>
     </div>
   </div>
@@ -196,15 +196,15 @@
   <div id="carousel" class="container">
     <h1>Kenangan Kita 💑</h1>
     <div class="slide">
-      <img src="https://drive.google.com/uc?export=view&id=1q6euVyEtD3DZ-xgSqgqnkIC1ZBgDwBZz" alt="Kita 1">
+      <img src="raw.githubusercontent.com/Zerione22/Surprize-Lala/main/IMG_1191.JPG" alt="Kita 1">
       <div class="caption">Setiap senyummu bikin aku jatuh cinta lagi dan lagi...</div>
     </div>
     <div class="slide">
-      <img src="https://drive.google.com/uc?export=view&id=1_w20ZSLnLgiFC1rneIoZtDTczZz_O_IL" alt="Kita 2">
+      <img src="raw.githubusercontent.com/Zerione22/Surprize-Lala/main/IMG_1123.jpg" alt="Kita 2">
       <div class="caption">Di setiap momen sederhana, kamu bikin semuanya jadi istimewa 💖</div>
     </div>
     <div class="slide">
-      <img src="https://drive.google.com/uc?export=view&id=1nfEHK-AErstkwKoMQleOagtQXcuI-o5-" alt="Kita 3">
+      <img src="raw.githubusercontent.com/Zerione22/Surprize-Lala/main/IMG_0963.jpg" alt="Kita 3">
       <div class="caption">Aku bersyukur bisa punya kamu di hidupku 😘</div>
     </div>
   </div>
@@ -236,7 +236,7 @@
     function handleChoice(wantMore) {
       const container = document.getElementById('more-q');
       if (wantMore) {
-        container.innerHTML = '<p>iyeyyy ciaapp pacalkuuu 😆😍</p>';
+        container.innerHTML = '<p>Yeayyy!! ciyaaap cayaaankkk 😍</p>';
         setTimeout(() => {
           document.getElementById('main-content').style.display = 'none';
           document.getElementById('carousel').style.display = 'block';
@@ -251,7 +251,7 @@
           `;
         } else {
           container.innerHTML = `
-            <p>Heeee ayaangg, gabolee nolaaak rezekiii 😏😆</p>
+            <p>Hmm... nggak bolehh nolaakk yaaa hehehe😏</p>
             <button onclick="handleChoice(true)">Oke deh, mau sekarang! ❤️</button>
           `;
         }
